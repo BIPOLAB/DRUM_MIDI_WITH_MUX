@@ -17,7 +17,7 @@
    <TFT_ILI9163C.h>
    <Wire.h> 
  
- " DRUMMI "  Ver.1.1
+ "DRUMMIO "  Ver.1.1
   Created Jul 26, 2017
   By Bipolab Engineering
   Buenos Aires, Argentina
