@@ -121,10 +121,10 @@ void setup() {
   display.begin();
   display.setRotation(1);
   display.clearScreen();
-  display.setCursor(5,54);
+  display.setCursor(10,54);
   display.setTextSize(2);
-  display.print("DRUMMIO");
-  delay(1000);
+  display.print(" DRUMMIO");
+  delay(5000);
 
   display.setTextSize(1);
    
@@ -243,7 +243,7 @@ void loop() {
 
   if (button_set == LOW && buttonState == true && buttonState_set == true) {
   display.clearScreen(); 
-  display.setCursor(0,50);
+  display.setCursor(10,54);
   display.setTextSize(2);
     // write the text to the top left corner of the screen
     display.print("EDIT MODE");
@@ -255,7 +255,7 @@ void loop() {
 
   if (button_set == LOW && buttonState == true && buttonState_set == false) {
   display.clearScreen(); 
-  display.setCursor(0,50);
+  display.setCursor(10,54);
   display.setTextSize(2);
     // write the text to the top left corner of the screen
     display.print("EDIT DONE");
