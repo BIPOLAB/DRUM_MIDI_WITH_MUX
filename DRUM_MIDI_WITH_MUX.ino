@@ -183,22 +183,22 @@ void loop() {
   /////////////////////////////////// CIRCUIT ///////////////////////////////////////
 
   
-  byte triggerValue_0  = analogRead(mux01_Data);  //Trigger Input 00
-  byte triggerValue_1  = analogRead(mux01_Data);  //Trigger Input 01
-  byte triggerValue_2  = analogRead(mux01_Data);  //Trigger Input 02
-  byte triggerValue_3  = analogRead(mux01_Data);  //Trigger Input 03
-  byte triggerValue_4  = analogRead(mux01_Data);  //Trigger Input 04
-  byte triggerValue_5  = analogRead(mux01_Data);  //Trigger Input 05
-  byte triggerValue_6  = analogRead(mux01_Data);  //Trigger Input 06
-  byte triggerValue_7  = analogRead(mux01_Data);  //Trigger Input 07
-  byte triggerValue_8  = analogRead(mux01_Data);  //Trigger Input 08
-  byte triggerValue_9  = analogRead(mux01_Data);  //Trigger Input 09
-  byte triggerValue_10 = analogRead(mux01_Data); //Trigger Input 10
-  byte triggerValue_11 = analogRead(mux01_Data); //Trigger Input 11
-  byte triggerValue_12 = analogRead(mux01_Data); //Trigger Input 12
-  byte triggerValue_13 = analogRead(mux01_Data); //Trigger Input 13
-  byte triggerValue_14 = analogRead(mux01_Data); //Trigger Input 14
-  byte triggerValue_15 = analogRead(mux01_Data); //Trigger Input 15
+  int triggerValue_0  = analogRead(mux01_Data);  //Trigger Input 00
+  int triggerValue_1  = analogRead(mux01_Data);  //Trigger Input 01
+  int triggerValue_2  = analogRead(mux01_Data);  //Trigger Input 02
+  int triggerValue_3  = analogRead(mux01_Data);  //Trigger Input 03
+  int triggerValue_4  = analogRead(mux01_Data);  //Trigger Input 04
+  int triggerValue_5  = analogRead(mux01_Data);  //Trigger Input 05
+  int triggerValue_6  = analogRead(mux01_Data);  //Trigger Input 06
+  int triggerValue_7  = analogRead(mux01_Data);  //Trigger Input 07
+  int triggerValue_8  = analogRead(mux01_Data);  //Trigger Input 08
+  int triggerValue_9  = analogRead(mux01_Data);  //Trigger Input 09
+  int triggerValue_10 = analogRead(mux01_Data); //Trigger Input 10
+  int triggerValue_11 = analogRead(mux01_Data); //Trigger Input 11
+  int triggerValue_12 = analogRead(mux01_Data); //Trigger Input 12
+  int triggerValue_13 = analogRead(mux01_Data); //Trigger Input 13
+  int triggerValue_14 = analogRead(mux01_Data); //Trigger Input 14
+  int triggerValue_15 = analogRead(mux01_Data); //Trigger Input 15
       endStop_0_Value = digitalRead(2); //hi-hat pedal
  
 
@@ -243,10 +243,10 @@ void loop() {
 
   if (button_set == LOW && buttonState == true && buttonState_set == true) {
   display.clearScreen(); 
-  display.setCursor(10,54);
+  display.setCursor(0,54);
   display.setTextSize(2);
     // write the text to the top left corner of the screen
-    display.print("EDIT MODE");
+    display.print(" EDIT MODE");
     
     buttonState = false;
     buttonState_set = false;
@@ -255,10 +255,10 @@ void loop() {
 
   if (button_set == LOW && buttonState == true && buttonState_set == false) {
   display.clearScreen(); 
-  display.setCursor(10,54);
+  display.setCursor(0,54);
   display.setTextSize(2);
     // write the text to the top left corner of the screen
-    display.print("EDIT DONE");
+    display.print(" EDIT DONE");
     
     buttonState = false;
     buttonState_set = true;
